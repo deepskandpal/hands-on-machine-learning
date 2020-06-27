@@ -16,8 +16,8 @@ for label_type in ['neg', 'pos']:
 				labels.append(0) 
 			else:
 				labels.append(1)
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 maxlen = 100 
 training_samples = 200 
@@ -93,8 +93,8 @@ for word, i in word_index.items():
 #                     batch_size=32,
 #                     validation_data=(x_val, y_val))
 
-from keras.datasets import imdb
-from keras.preprocessing import sequence
+from tensorflow.keras.datasets import imdb
+from tensorflow.keras.preprocessing import sequence
 
 max_features = 10000
 maxlen = 500
@@ -109,8 +109,7 @@ np.load = lambda *a,**k: np_load_old(*a, allow_pickle=True, **k)
 
 # call load_data with allow_pickle implicitly set to true
 
-(input_train, y_train), (input_test, y_test) = imdb.load_data(
-     num_words=max_features)
+(input_train, y_train), (input_test, y_test) = imdb.load_data(num_words=max_features)
 np.load = np_load_old
 print(len(input_train), 'train sequences')
 print(len(input_test), 'test sequences')
