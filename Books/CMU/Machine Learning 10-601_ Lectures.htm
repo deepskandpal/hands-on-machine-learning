@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0060)http://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ 
+  <link rel="SHORTCUT ICON" href="./Machine Learning 10-601_ Lectures_files/ml-logo.gif">
+  <link rel="stylesheet" href="./Machine Learning 10-601_ Lectures_files/style.css">
+
+  <title>
+
+Machine Learning 10-601: Lectures
+  </title>
+</head>
+ 
+<body link="#993333">
+
+<table align="center" border="0" cellpadding="8" width="70%">  
+  <tbody>  
+    <tr>
+ 
+      <td width="80%">  
+      <h1 align="left"> <br>
+      <b> Machine Learning</b> </h1>
+ 
+      <h2> 10-601, Spring 2015 </h2>
+      <h2> Carnegie Mellon University </h2>
+ 
+      <h2><a href="http://www.cs.cmu.edu/~tom">Tom Mitchell</a> and <a href="http://www.cs.cmu.edu/~ninamf/"> Maria-Florina Balcan </a> <br>
+ </h2>
+  
+      </td>
+ 
+      <td align="right" width="20%"><img src="./Machine Learning 10-601_ Lectures_files/ml-logo.gif" height="150" width="150">
+      </td>
+ 
+    </tr>
+  
+    <tr>
+ 
+      <td colspan="2" align="justify" valign="top"> <br>
+ 
+      <br><table width="100%">
+        <tbody>
+          <tr>
+            <td colspan="2" bgcolor="#993333"><img src="./Machine Learning 10-601_ Lectures_files/transparent.gif" border="0" height="1"></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="justify">
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/index.html"> <b>Home</b> </a> 
+                  </p>
+                  </td>
+                  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/ppl.shtml"> <b>People </b></a>
+                  </p>
+                  </td>
+                  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/lectures.shtml"> <b> Lectures </b></a>
+                  </p>
+                  </td>
+                  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/recitations.shtml"> <b>Recitations </b></a>
+                  </p>
+                  </td>
+                  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/homeworks.shtml"> <b>Homeworks </b></a>
+                  </p>
+                  </td>
+				  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/projects.html"> <b>Project</b></a>
+                  </p>
+                  </td>
+                  <td width="12%">
+                  <p class="headlink">
+                  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/prev.shtml"> <b> Previous material </b></a>
+                  </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#993333"><img src="./Machine Learning 10-601_ Lectures_files/transparent(1).gif" border="0" height="1"></td>
+          </tr>
+	  
+		  <tr>
+            <td valign="top" width="22%">
+			</td>
+            
+            <td align="justify"> <br>
+          
+			</td>
+		  </tr>
+
+
+<tr><td colspan="2">
+
+<center>
+<h3>This is a tentative schedule and is subject to change.<br>Please note that Youtube takes some time to process videos before they become available.</h3>
+</center>
+
+<!--Page content begins. Keep everything before this line.-->
+<table class="schedule" _base_target="_blank" style="margin-top: 20px; margin-bottom: 20px;" border="1" cellspacing="0">
+  <colgroup><col style="vertical-align: top; text-align: left;" width="8%">
+  <col style="vertical-align: top; text-align: center;" width="13%">
+  <col style="vertical-align: top; text-align: center;" width="40%">
+  <col style="vertical-align: top; text-align: left;" width="29%">
+  <col style="vertical-align: top; text-align: left;" width="10%">
+  </colgroup><tbody _base_target="_blank">
+    <tr _base_target="_blank">
+      <th style="text-align: center;" _base_target="_blank">Date</th>
+      <th style="text-align: center;" _base_target="_blank">Lecture</th>
+      <th style="text-align: center;" _base_target="_blank">Topics</th>
+      <th style="text-align: center;" _base_target="_blank">Readings and useful links</th>
+      <th style="text-align: center;" _base_target="_blank">Handouts</th>
+    </tr>
+
+	<tr>
+		<td style="text-align: center;">Jan 12</td>
+		<td style="text-align: center;">Intro to ML<br>Decision Trees<br></td>
+		<td style="text-align: left;"><ul>
+			<li>Machine learning examples</li>
+			<li>Well defined machine learning problem</li>
+			<li>Decision tree learning</li>
+		</ul></td>
+		<td>
+		  Mitchell: Ch 3<br>
+		  Bishop: Ch 14.4<br>
+		  <a href="http://www.cs.cmu.edu/~tom/pubs/MachineLearning.pdf">The
+		    Discipline of Machine Learning</a>
+		</td>
+		<td style="text-align: center;"><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/01_DTreesAndOverfitting-1-12-2015.pdf">Slides</a><br>
+        <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/1.html">Video</a>
+        </td>
+	</tr>
+
+	<tr>
+		<td style="text-align: center;">Jan 14</td>
+		<td style="text-align: center;">Decision Tree learning<br>Review of Probability</td>
+		<td style="text-align: left;"><ul>
+			<li>The big picture</li>
+			<li>Overfitting</li>
+			<li>Random variables and probabilities</li>
+		</ul></td>
+		<td>
+		  Mitchell: Ch 3<br>
+		  <a href="http://www.autonlab.org/tutorials/prob18.pdf">Andrew Moore's Basic Probability Tutorial</a><br>
+		</td>		
+		<td style="text-align: center;"><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/02_Overfitting_ProbReview-1-14-2015.pdf">Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/02_Overfitting_ProbReview-1-14-2015_ann.pdf">Annotated Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/2.html">Video</a>
+		</td>
+	</tr>
+		
+	<tr>	
+		<td style="text-align: center;">Jan 21</td>
+		<td style="text-align: center;">Probability and Estimation</td>
+		<td style="text-align: left;"><ul>
+			<li>Bayes rule</li>
+			<li>MLE</li>
+			<li>MAP</li>
+		</ul></td>
+		<td>
+		  Mitchell: <a href="http://www.cs.cmu.edu/~tom/mlbook/Joint_MLE_MAP.pdf">Estimating Probabilities</a>
+		</td><td style="text-align: center;"><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/03_MLE_MAP_NBayes-1-21-2015.pdf">Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/03_MLE_MAP_NBayes-1-21-2015_ann.pdf">Annotated Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/3.html">Video</a>
+		</td>
+	</tr>    
+
+	<tr>	
+		<td style="text-align: center;">Jan 26</td>
+		<td style="text-align: center;">Naive Bayes</td>
+		<td><ul>
+			<li>Conditional Independence</li>
+			<li>Naive Bayes: why and how</li>
+		</ul></td>
+		<td>
+		  Mitchell:
+		  <a href="http://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf">
+		    Naive Bayes and Logistic Regression</a>
+		</td>
+		<td style="text-align: center;">
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/04_NBayes-1-26-2015.pptx.pdf">Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/04_NBayes-1-26-2015-ann.pdf">Annotated Slides</a><br>
+		<a href="http://youtu.be/ngKU5466i4o">Video</a>
+		</td>
+	</tr> 
+
+	<tr>	
+		<td style="text-align: center;">Jan 28</td>
+		<td style="text-align: center;">Gaussian Naive Bayes</td>
+		<td style="text-align: left;"><ul>
+			<li>Gaussian Bayes classifiers</li>
+			<li>Document Classification</li>
+			<li>Brain image classification</li>
+			<li>Form of decision surfaces</li>
+		</ul></td>
+		<td>
+		  Mitchell:
+		  <a href="http://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf">
+		    Naive Bayes and Logistic Regression</a>
+		</td>
+		<td style="text-align: center;"><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/05_GNB_1-28-2015.pdf">Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/05_GNB_1-28-2015-ann.pdf">Annotated Slides</a><br>
+		<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/5.html">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Feb 2</td>
+		<td style="text-align: center;">Logistic Regression</td>
+		<td style="text-align: left;"><ul>
+			<li>Naive Bayes - the big picture</li>
+			<li>Logistic Regression: Maximizing conditional likelihood</li>
+			<li>Gradient ascent as a general learning/optimization method</li>			
+		</ul></td>
+		<td>
+		  Mitchell:
+		  <a href="http://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf">
+		    Naive Bayes and Logistic Regression</a>
+		</td>
+		<td style="text-align: center;">
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/06_GenDiscr_LR_2-2-2015.pdf">Slides</a><br>
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/06_GenDiscr_LR_2-2-2015-ann.pdf">Annotated Slides</a><br>
+		  <a href="http://youtu.be/z_xPu9KrgCY">Video</a>
+		</td>
+	</tr> 
+	
+	<tr>	
+		<td style="text-align: center;">Feb 4</td>
+		<td style="text-align: center;">Linear Regression</td>
+		<td style="text-align: left;"><ul>
+			<li>Generative/Discriminative models</li>
+			<li>Minimizing squared error and maximizing data likelihood</li>
+			<li>Regularization</li>			
+			<li>Bias-variance decomposition</li>
+		</ul></td>
+		<td>&nbsp;</td>
+		<td style="text-align: center;">
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/07_GenDiscr2_2-4-2015.pdf">Slides</a><br>
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/07_GenDiscr2_2-4-2015-ann.pdf">Annotated Slides</a><br>
+		  <a href="http://youtu.be/wA5h9pD1qrU">Video</a>
+		</td>
+	</tr>
+
+	<tr>	
+		<td style="text-align: center;">Feb 9</td>
+		<td style="text-align: center;">Learning Theory I</td>
+		<td style="text-align: left;"><ul>
+			<li>Distributional Learning</li>
+			<li>PAC and Statistical Learning Theory</li>
+			<li>Sample Complexity</li>
+		</ul></td>
+		<td>
+			Mitchell: Ch 7<br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/sc-2015.pdf">Notes on Generalization Guarantees</a>
+		</td>
+		<td style="text-align: center;">
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/08_Theory_2-9-2015.pdf">Slides</a><br>
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/8.html">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Feb 11</td>
+		<td style="text-align: center;">Learning Theory II</td>
+		<td style="text-align: left;"><ul>
+			<li>Sample Complexity</li>
+			<li>Shattering and VC Dimension</li>
+			<li>Sauer's Lemma</li>
+		</ul></td>
+		<td>
+			Mitchell: Ch 7<br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/sc-2015.pdf">Notes on Generalization Guarantees</a>
+		</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/09_Theory2_2-11-2015.pdf">Slides</a><br>
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/9.html">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Feb 16</td>
+		<td style="text-align: center;">Learning Theory III</td>
+		<td style="text-align: left;"><ul>
+			<li>Rademacher Complexity</li>
+			<li>Overfitting and Regularization</li>
+		</ul></td>
+		<td>&nbsp;</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/10_Theory3_2-16-2015.pdf">Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/10.html">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Feb 18</td>
+		<td style="text-align: center;">Graphical Models I</td>
+		<td style="text-align: left;"><ul>
+			<li>Bayes Nets</li>
+			<li>Representing joint distributions with conditional independence assumptions</li>
+		</ul></td>
+		<td style="text-align: left;">Bishop chapter 8, through 8.2</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/11_GrMod1_2-18-2015.pdf">Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/11_GrMod1_2-18-2015-ann.pdf">Annotated Slides</a><br>
+			<a href="http://youtu.be/vdV81hCLwLE">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Feb 23</td>
+		<td style="text-align: center;">Graphical Models II</td>
+		<td style="text-align: left;"><ul>
+			<li>Inference</li>
+			<li>Learning from fully observed data</li>			
+			<li>Learning from partially observed data</li>			
+		</ul></td>
+		<td>&nbsp;</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/12_GrMod1_2-23-2015-ann.pdf">Annotated Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/12.html">Video</a>
+		</td>
+	</tr>
+	<tr>	
+		<td style="text-align: center;">Feb 25</td>
+		<td style="text-align: center;">Graphical Models III</td>
+		<td style="text-align: left;"><ul>
+			<li>EM</li>
+			<li>Semi-supervised learning</li>			
+		</ul></td>
+		<td style="text-align: left;">Bishop Chapter 8<br>Mitchell Chapter 6</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/13_GrMod3_2-25-2015.pdf">Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/13_GrMod3_2-25-2015-ann.pdf">Annotated Slides</a><br>
+			<a href="http://youtu.be/E16cqVHXow8">Video</a>
+		</td>
+	</tr>
+
+	
+	<tr><td style="text-align: center;">Mar 2</td><td colspan="4" style="text-align: center;"><b>Exam #1</b></td>
+
+	</tr><tr><td style="text-align: center;">Mar 4</td>
+		<td style="text-align: center;">EM and Clustering</td>
+		<td style="text-align: left;"><ul>
+			<li>Mixture of Gaussian clustering</li>			
+			<li>K-means clustering</li>
+		</ul></td>
+		<td style="text-align: left;">Bishop Chapter 8<br>Mitchell Chapter 6</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/14_GrMod4_3-4-2015.pdf">Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/14_GrMod4_3-4-2015-ann.pdf">Annotated Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/video/14.html">Video</a>
+		</td>
+	</tr>
+
+	<tr><td colspan="5" style="text-align: center;">Spring Break</td>
+	
+	</tr><tr>	
+		<td style="text-align: center;">Mar 16</td>
+		<td style="text-align: center;">Boosting</td>
+		<td style="text-align: left;"><ul>
+			<li>Weak vs Strong (PAC) Learning</li>			
+			<li>Boosting Accuracy</li>
+			<li>Adaboost</li>
+		</ul></td>
+		<td style="text-align: left;"><ul>
+			<li><a href="https://www.cs.princeton.edu/picasso/mats/schapire02boosting_schapire.pdf">The Boosting Approach to Machine Learning: An Overview</a></li>
+			<li><a href="http://www.cs.princeton.edu/~schapire/talks/nips-tutorial.pdf">Theory and Applications of Boosting (NIPS Tutorial)</a></li>
+		</ul></td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/15_boosting_3-16-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/28aAjtyzrRE">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Mar 18</td>
+		<td style="text-align: center;">Adaboost, Margins, Perceptron</td>
+		<td style="text-align: left;"><ul>
+			<li>Adaboost: Generalization Guarantees(naive and margins based).
+			</li><li>Geometric Margins and Perceptron</li>
+		</ul></td>
+		<td style="text-align: center;"><a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/perceptron-notes.pdf">Notes on Perceptron</a></td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/16_boosting-percepton-margins_03-18-2015.pdf">Slides</a><br>
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/16_boosting-percepton-margins_03-18-2015.pptx">Slides (PPT)</a><br>
+			<a href="http://youtu.be/qI_QNnDN26k">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Mar 23</td>
+		<td style="text-align: center;">Kernels</td>
+		<td style="text-align: left;"><ul>
+			<li>Geometric Margins</li>			
+			<li>Kernels: Kernelizing a Learning Algorithm</li>			
+			<li>Kernelized Perceptron</li>			
+		</ul></td>
+		<td style="text-align: center;">Bishop 6.1 and 6.2</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/17_margins-kernels_03-23-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/T6AksiAVJ0k">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Mar 25</td>
+		<td style="text-align: center;">SVM</td>
+		<td style="text-align: left;"><ul>
+			<li>Geometric Margins</li>			
+			<li>SVM: Primal and Dual Forms</li>			
+			<li>Kernelizing SVM</li>	
+			<li>Semi-supervised Learning</li>
+			<li>Semi-supervised SVM</li>
+		</ul></td>
+		<td style="text-align: center;">
+		  <a href="http://cs229.stanford.edu/notes/cs229-notes3.pdf">Notes on SVM by Andrew Ng</a>
+		</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/18_svm-ssl_03-25-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/JoJhXsdTWxM">Video</a>
+		</td>
+	</tr>
+	
+	<tr><td style="text-align: center;">Mar 30</td>
+		<td style="text-align: center;">Semi-supervised Learning</td>
+	    <td style="text-align: left;"><ul>
+			<li>Transductive SVM</li>			
+			<li>Co-training and Multi-view Learning</li>			
+			<li>Graph-based Methods</li>	
+		</ul></td>
+		<td style="text-align: center;">
+		  <ul><li><a href="http://pages.cs.wisc.edu/~jerryzhu/pub/SSL_EoML.pdf">"Semi-Supervised Learning" in Encyclopedia of Machine Learning</a></li>
+		  <li><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/theo-20/www/mitchell-pubs/colt98_final.ps">Co-training Paper</a></li>
+		  <li><a href="http://www.cs.cornell.edu/people/tj/publications/joachims_99c.pdf">Transductive SVM Paper</a></li>
+		  </ul>
+		</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/19_ssl_03-30-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/gnNLjX50F7U">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 1</td>
+		<td style="text-align: center;">Active Learning</td>
+	    <td style="text-align: left;"><ul>
+			<li>Batch Active Learning</li>			
+			<li>Selective Sampling and Active Learning</li>			
+			<li>Sampling Bias</li>	
+		</ul></td>
+		<td style="text-align: center;">
+		  <ul><li><a href="http://cseweb.ucsd.edu/~dasgupta/papers/twoface.pdf">Two Faces of Active Learning</a></li>
+		  <li><a href="http://burrsettles.com/pub/settles.activelearning.pdf">Active Learning Literature Survey (by Burr Settles)</a></li>
+		  <li><a href="http://www.cs.cmu.edu/~ninamf/papers/al-survey-enc-algos.pdf">Active Learning Survey (by Balcan and Urner)</a></li>
+		  </ul>
+		</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/20_al_4-1-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/2BZhsEakEH8">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 6</td>
+	    <td style="text-align: left;"><ul>
+			<li>Partitional Clustering</li>			
+			<li>Hierarchical Clustering</li>
+		</ul></td>
+	    <td style="text-align: left;"><ul>
+			<li>k-means, Lloyd's method,  k-means++</li>			
+			<li>Agglomerative Clustering</li>
+		</ul></td>
+		<td style="text-align: center;">
+		<ul><li>Hastie, Tibshirani and Friedman, Chapter 14.3</li>
+		<li><a href="http://www.cs.cmu.edu/~ninamf/papers/cluster-chapter.pdf">
+		Center Based Clustering: A Foundational Perspective</a></li>
+		<ul>
+		</ul></ul></td>
+		<td style="text-align: center;">
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/21_clustering_4-6-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/p3cB23CzpzQ">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 8</td>
+		<td style="text-align: left;"><ul>
+			<li>Learning Representations</li>			
+			<li>Dimensionality Reduction</li>
+		</ul></td>
+	    <td style="text-align: left;"><ul>
+			<li>Principal Component Analysis</li>			
+			<li>Kernel Principal Component Analysis</li>
+		</ul></td>
+	    <td style="text-align: left;"><ul>Bishop 12.1, 12.3
+		</ul></td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/22_pca-04-09-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/ds8l8prOsvU">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 13</td>
+		<td style="text-align: center;">Never Ending Learning</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/23_nell_4-13-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/OsPRlf4B6qg">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 15</td>
+		<td style="text-align: center;">Neural Networks<br>Deep Learning</td>
+		<td>&nbsp;</td>
+		<td style="text-align: center;">
+		Mitchell, Chapter 4
+		</td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/24_nn_4-15-2015.pdf">Slides</a><br>
+			<a href="http://youtu.be/CiMill_mVNE">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 20</td>
+		<td style="text-align: center;">Reinforcement Learning</td>
+		<td><ul><li>Markov Decision Processes</li>
+			<li>Value Iteration</li>
+			<li>Q-learning</li></ul>
+		</td>
+		<td><ul><li>Mitchell, Chapter 13</li>
+			<li><a href="https://www.jair.org/media/301/live-301-1562-jair.pdf">Kaelbling, et al., Reinforcement Learning: A Survey</a></li></ul></td>
+		<td style="text-align: center;">
+			<a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/25_rl_4-20-2015.pdf">Slides</a><br>		
+			<a href="http://youtu.be/mHE3UXEUbgc">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 22</td>
+		<td style="text-align: center;">Deep Learning<br>Differential Privacy<br>Discussion on the Future of ML</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td style="text-align: center;">
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/26_privacy_4-22-2015.pdf">Slides (Privacy)</a><br>		
+		  <a href="http://www.cs.cmu.edu/~ninamf/courses/601sp15/slides/26_deep_4-22-2015.pdf">Slides (Deep Nets)</a><br>		
+			<a href="http://youtu.be/5B3tZPNH85s">Video</a>
+		</td>
+	</tr>
+	
+	<tr>	
+		<td style="text-align: center;">Apr 27</td>
+		<td style="text-align: center;">Course review</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	
+	<tr><td style="text-align: center;">Apr 29</td><td colspan="4" style="text-align: center;"><b>Exam #2</b></td>
+	
+  </tr></tbody>           
+</table>
+
+		  </td></tr><tr>
+            <td colspan="2" bgcolor="#993333"><img src="./Machine Learning 10-601_ Lectures_files/transparent.gif" border="0" height="1"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

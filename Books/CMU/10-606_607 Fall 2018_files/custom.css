@@ -1,0 +1,106 @@
+#myCarousel {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+#myCarousel img {
+  width: 100%;
+}
+
+.montage {
+  width: 100%;
+}
+
+div.person {
+  width: 200px;
+  height: 200px;
+}
+img.person {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+.no-padding {
+  padding: 0px !important;
+}
+
+body {
+  /* background-color: #fafafa; #2c3e50; */
+  /* font-family: 'Open Sans', sans-serif; */
+}
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: 'Ubuntu', sans-serif;  */
+}
+
+section {
+  padding: 20px;
+}
+table {
+  background-color: #ffffff;
+}
+/*
+.section1 {
+  background-color: #2c3e50; #18bc9c; #168ccc;
+  color: white;
+}
+.section2 {
+  background-color: #fafafa;
+}
+.footer {
+  background-color:  #2c3e50;
+  color: white;
+}
+*/
+
+.brand {
+  padding: 0px !important;
+  padding-right: 20px !important;
+}
+
+.thumbnail {
+  max-height: 100px !important;
+}
+
+.tr-info {
+  background-color: #ccd !important;
+}
+
+.tr-highlight {
+  background-color: #ccd !important;
+}
+
+/* --------- Hover Links ------------ */
+
+.header-link {
+  position: absolute;
+  left: -0.5em;
+  opacity: 0;
+
+  \-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  \-moz-transition: opacity 0.2s ease-in-out 0.1s;
+  \-ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
+
+/* Use a spacer before the target so that fixed-position links at top don't cover heading.
+   http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-C
+*/
+.header-target:before {
+    display: block;
+    content: "";
+    height: 80px;
+    margin: -80px 0 0;
+}
+/* ---------------------------------- */

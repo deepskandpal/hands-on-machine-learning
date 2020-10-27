@@ -1,0 +1,24 @@
+body {
+  position: relative;	 
+}
+.footer {
+	height: 200px;
+}
+li a {
+	transition-duration: 1s;
+}
+
+/* Helpers for top position on internal page links
+====================================================*/
+#topPos:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; 
+  height: 60px;
+  visibility: hidden;
+}
+/* AFFIX STYLES
+====================================================*/
+.panel-affix {
+	min-width: 150px;
+}
