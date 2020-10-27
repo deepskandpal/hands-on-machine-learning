@@ -23,11 +23,12 @@ Plan
     1. [Linear Algebra](readmes/linearAlgebra.md)
     2. Matrices
     3. Probability
-    4. Function Approximation
-    5. Bayesian Theory
-    6. Supervised Learning
-    7. Unsupervised Learning
-    8. Deep Learning
+    4. Information Theory
+    5. Function Approximation
+    6. Bayesian Theory
+    7. Supervised Learning
+    9. Unsupervised Learning
+    9. Deep Learning
     
     
 3.  Data Science vs Machine Learninng
