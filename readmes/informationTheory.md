@@ -11,20 +11,19 @@
 
 pointers
 
-information theory
-transmission of information
-likely event less information
-unlikely event more information
-expectation of an event to transmit the average amount of information
-non uniform distribution has smaller length code
-entropy 
-entropy from physics to statsitical mechanics
-entropy of discrete random variable
-entropy of continous random variable
-relative entropy, mutual information and KL divergence 
-convex and concave functions
-
-Kl divergence entropy and cross entropy for machine learning link between Kl divergence and maximum likelihood
+1. information theory
+2. transmission of information
+   likely event less information
+   unlikely event more information
+3. expectation of an event to transmit the average amount of information
+   non uniform distribution has smaller length code
+4. entropy
+5.  entropy from physics to statsitical mechanics
+6. entropy of discrete random variable
+7. entropy of continous random variable
+8. relative entropy, mutual information and KL divergence 
+   convex and concave functions
+9. Kl divergence entropy and cross entropy for machine learning link between Kl divergence and maximum likelihood
 
 
 ### More links to read up
