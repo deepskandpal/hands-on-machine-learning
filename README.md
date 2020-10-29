@@ -3,25 +3,25 @@
 Aim
   1. To Learn Machine Learning and Data Science 
   2. Create a Repo for future reference and interviews questions
-  
- 
+
+
 Plan
 1.  Understand what Data Science is
     1.  where does data come from
     2.  framing a data science problem
-    3.  Types of Data
-    4.  Types of Data Bases 
-    5.  Data Visualization
-    6.  A statistics Primer
-    7.  Stastical Properties of data
-    8.  Exploratory Data Analysis
-    9.  Python and R for Data Science
-    10. Data Prepocessing
-    11. Feature Engineering
+    3.  [A Python Primer](readmes/python.md)
+    4.  Types of Data
+    5.  Types of Data Bases 
+    6.  Data Visualization
+    7.  A statistics Primer
+    8.  Stastical Properties of data
+    9.  Exploratory Data Analysis
+    10.  Python and R for Data Science
+    11.  Data Prepocessing
+    12.  Feature Engineering
     
 2.  Understand what machine learning is 
-    1. [Linear Algebra](readmes/linearAlgebra.md)
-    2. Matrices
+    1. [Linear Algebra and Matrices](readmes/linearAlgebra.md)
     3. Probability
     4. [Information Theory](readmes/informationTheory.md)
     5. Function Approximation
